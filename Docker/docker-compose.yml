@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  backend:
+    build: 
+      context: ./backend-express
+    ports:
+      - "4000:3000"
+    depends_on:
+      - frontend
+
+  frontend:
+    build: 
+      context: ./frontend-react
+    ports:
+      - "5000:80"

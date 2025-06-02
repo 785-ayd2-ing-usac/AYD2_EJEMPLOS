@@ -1,0 +1,4 @@
+docker build -t mi-backend .
+docker run -p 5000:3000 mi-backend
+docker build -t mi-frontend .
+docker run -p 4000:80 mi-frontend
